@@ -1,0 +1,17 @@
+<div class="container">
+  <form name="vmd.recipeForm" ng-submit='vmd.putRecipe(vmd.newRecipe,vmd.recipeForm)'>
+    <h4>Add Recipe</h4>
+    <div class='inputTxt'>
+      <h4>Recipe</h4>
+      <input class="form-control" type="text" id="recId" ng-model="vmd.newRecipe.recipeName" />
+      <h4>Ingredients</h4>
+      <input class="form-control" type="text" id="ingId" ng-model="vmd.newRecipe.ingredients" />
+
+      <button class="btn btn-primary dirBtn">Add Recipe</button>
+      <button type="submit" id='closebtn' class="btn btn-primary dirBtn">close</button>
+    </div>
+    
+    
+    
+  </form>
+</div>

@@ -1,0 +1,17 @@
+<div class='container mainContainer'>
+  <div class='boxOuter'>
+    <div class="panelmain" ng-repeat="recipe in recipeList track by $index">
+      <div class='panel panel-primary'>
+        <div class='panel-heading' ng-click='collapsed = !collapsed'>{{recipe.recipeName}}</div>
+        <div class="panel-body" ng-hide="!collapsed">
+          <h4>Ingredients</h4>
+          <input type='text' ng-model="recipe.ingredients" />
+
+          <button class='boxbtn btn btn-danger'>Delete</button>
+          <button class='boxbtn btn btn-primary'>Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
